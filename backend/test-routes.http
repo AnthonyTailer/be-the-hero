@@ -1,0 +1,40 @@
+### ONGS
+
+### LIST ALL ONGS
+GET http://localhost:3333/ongs
+Content-Type: application/json
+
+### CREATE a ONG
+POST http://localhost:3333/ongs
+Content-Type: application/json
+
+{
+  "name": "WARPED",
+  "email": "contato@apad.com.br",
+  "whatsapp": "32423444",
+  "city": "Santa Maria",
+  "uf": "RS"
+}
+
+### LIST ALL INCIDENTS
+GET http://localhost:3333/incidents?page=2
+Content-Type: application/json
+
+### CREATE INCIDENTS
+POST http://localhost:3333/incidents
+Content-Type: application/json
+Authorization: cb520f53
+
+{
+  "title": "Cachorro loco com Lepra",
+  "description": "foi encontrado um cachorro chapado na rua bem loco esse diabo",
+  "value": 23
+}
+
+### DELETE INCIDENTS
+DELETE http://localhost:3333/incidents/2
+Content-Type: application/json
+Authorization: cb520f53
+
+###
+
